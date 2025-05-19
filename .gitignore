@@ -1,0 +1,9 @@
+.connection
+.env
+..gitignore.swp
+
+projects
+data
+logs
+postgres-db
+tmp

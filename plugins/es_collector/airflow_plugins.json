@@ -1,0 +1,13 @@
+{
+    "name": "es_collector",
+    "description": "Elasticsearch Collector plugin",
+    "version": "0.2",
+    "plugins": [],
+    "hooks": [],
+    "operators": ["es_collector.operators.es_operator.ESOperator"],
+    "sensors": [],
+    "macros": [],
+    "admin_views": [],
+    "flask_blueprints": [],
+    "menu_links": []
+}
