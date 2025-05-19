@@ -1,0 +1,32 @@
+{
+    "enable": true,
+    "module": "es_collector.dogs.message_dog",
+    "index": "tgmsg*",
+    "filter_name": "mikhail_tgmsg_mebel",
+    "filter_index": "filters2",
+    "bot_token": "token",
+    "chat_id": [
+        "-1002628377894"
+    ],
+    "post_template": "template_1",
+    "dag_tags": [
+        "tgmsg",
+        "mikhail",
+        "mebel",
+        "moscow"
+    ],
+    "start_date": "2023-01-01 00:00:00",
+    "end_date": "2025-05-02 23:59:59",
+    "interval": 3,
+    "succession": "dubler",
+    "check_double_user": true,
+    "check_double_text": true,
+    "size": 2,
+    "search_after": "2025-05-02T21:08:12.290177Z",
+    "sort": {
+        "time": {
+            "order": "asc"
+        }
+    },
+    "dag_id": "mikhail_tgmsg_mebel"
+}

@@ -1,0 +1,34 @@
+{
+    "enable": true,
+    "module": "es_collector.dogs.message_dog",
+    "index": "tgmsg*",
+    "filter_name": "olia_targetolog",
+    "filter_index": "filters2",
+    "bot_token": "token",
+    "chat_id": [
+        "-1002298697836"
+    ],
+    "send_notification": true,
+    "notification1": "ℹ #info\n\nРабота парсера прекратится через 24 часа\n\nДля продления услуги свяжитесь с @oliaza",
+    "notification2": "ℹ #info\n\nРабота парсера прекращена\n\nДля продления услуги свяжитесь с @oliaza",
+    "post_template": "template_1",
+    "dag_tags": [
+        "tgmsg",
+        "olia",
+        "target"
+    ],
+    "start_date": "2023-01-01 00:00:00",
+    "end_date": "2025-04-23 23:59:59",
+    "interval": 3,
+    "succession": "dubler",
+    "check_double_user": true,
+    "check_double_text": true,
+    "size": 10,
+    "search_after": "2025-04-23T21:48:37.814344Z",
+    "sort": {
+        "time": {
+            "order": "asc"
+        }
+    },
+    "dag_id": "olia_tgmsg_targetolog"
+}

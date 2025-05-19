@@ -1,0 +1,43 @@
+{
+    "enable": true,
+    "description": "free press, prigojina, hamas",
+    "module": "es_collector.dogs.message_dog",
+    "max_links": 1,
+    "before_post": "",
+    "before_text": "",
+    "after_text": "\n\n[Свободная ✌️ Пресса](https://t.me/+MSIVBy_Doco0YjEy)",
+    "index": "tgmsg*",
+    "filter_name": "liberal_news",
+    "filter_index": "filters",
+    "bot_token": "token",
+    "chat_id": [
+        "-1001964156174",
+        "-1001911768614",
+        "-1001894306400",
+        "-1002088003898"
+    ],
+    "post_template": "chan_clear",
+    "dag_tags": [
+        "tgmsg",
+        "polihoster",
+        "news",
+        "ru"
+    ],
+    "start_date": "2023-01-01 00:00:00",
+    "end_date": "2025-07-20 23:59:59",
+    "interval": 5,
+    "succession": "default",
+    "text_regex_patterns": {
+        "\\[([^\\]]+)\\]\\([^)]+\\)": "\\1"
+    },
+    "check_double_user": false,
+    "check_double_text": true,
+    "size": 1,
+    "search_after": "2025-05-19T13:02:00.139262Z",
+    "sort": {
+        "time": {
+            "order": "asc"
+        }
+    },
+    "dag_id": "polihoster_tgmsg_ru_news"
+}

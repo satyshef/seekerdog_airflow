@@ -1,0 +1,49 @@
+{
+    "enable": true,
+    "description": "Пересылка в канал Навальная",
+    "module": "es_collector.dogs.message_dog",
+    "max_links": 3,
+    "before_post": "",
+    "before_text": "",
+    "after_text": "\n\n[Свободная ✌️ Пресса](https://t.me/+MSIVBy_Doco0YjEy)",
+    "index": "tgmsg*",
+    "filter_name": "liberal_news",
+    "filter_index": "filters",
+    "bot_token": "token",
+    "chat_id": [
+        "-1001976651873"
+    ],
+    "post_template": "chan_clear",
+    "dag_tags": [
+        "tgmsg",
+        "liberal",
+        "navalnaya",
+        "polihoster",
+        "news",
+        "ru"
+    ],
+    "start_date": "2023-01-01 00:00:00",
+    "end_date": "2025-07-20 23:59:59",
+    "interval": 10,
+    "succession": "default",
+    "text_regex_patterns": {
+        "\\[([^\\]]+)\\]\\([^)]+\\)": "\\1",
+        "\\b(?:https?|ftp):\\/\\/\\S+\\b": "",
+        "⚠️ Подпишитесь, мы все объясним": "",
+        "Подписаться / Читать дальше": "",
+        "Подпишитесь на ASTRA. Будьте в курсе событий, о которых запрещено говорить кремлевским СМИ.": "",
+        "ASTRA": "МАСА",
+        "ASTRA:": "МАСА",
+        "@redastrabot": ""
+    },
+    "check_double_user": false,
+    "check_double_text": false,
+    "size": 1,
+    "search_after": "2025-05-19T12:26:29.439085Z",
+    "sort": {
+        "time": {
+            "order": "asc"
+        }
+    },
+    "dag_id": "polihoster_tgmsg_navalnaya"
+}

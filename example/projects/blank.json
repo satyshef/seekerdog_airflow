@@ -1,0 +1,36 @@
+{
+    "enable": true,
+    "module": "es_collector.dogs.message_dog",
+    "index": "",
+    "filter_name": "",
+    "filter_index": "",
+    "bot_token": "token",
+    "chat_id": [
+        "-1002047547507"
+    ],
+    "post_template": "chan_clear",
+    "dag_tags": [
+        "tgmsg"
+    ],
+    "start_date": "2023-01-01 00:00:00",
+    "end_date": "",
+    "interval": 3,
+    "succession": "dubler",
+    "check_double_user": true,
+    "check_double_text": true,
+    "size": 3,
+    "search_after": "2025-01-01T00:00:00Z",
+    "sort": {
+        "time": {
+            "order": "asc"
+        }
+    },
+    "send_notification": true,
+    "send_notification": "on",
+    "notification1": "ℹ #info\n\nРабота парсера прекратится через 24 часа\n\nДля продления услуги свяжитесь с @vagerman",
+    "notification2": "ℹ #info\n\nРабота парсера прекращена\n\nДля продления услуги свяжитесь с @vagerman",
+    "before_post": "",
+    "before_text": "",
+    "after_text": "",
+    "text_regex_patterns": {}
+}

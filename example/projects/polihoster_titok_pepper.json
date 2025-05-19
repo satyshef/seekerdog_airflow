@@ -1,0 +1,50 @@
+{
+    "enable": true,
+    "description": "Tiktok news for 7news. Source ria news",
+    "module": "es_collector.dogs.message_dog",
+    "index": "tgmsg*",
+    "filter_name": "liberal_news",
+    "filter_index": "filters",
+    "content": {
+        "random": true,
+        "max_text_len": 250,
+        "min_text_len": 50,
+        "lines_count": 8,
+        "file_name": "./data/news/pepper_news"
+    },
+    "max_links": 3,
+    "before_post": "",
+    "before_text": "",
+    "after_text": "",
+    "text_regex_patterns": {
+        "\\[([^\\]]+)\\]\\([^)]+\\)": "\\1",
+        "ASTRA": "МАСА",
+        "Свободная ✌️ Пресса": "",
+        "РИА Новости": "МАСА"
+    },
+    "bot_token": "token",
+    "send_notification": false,
+    "notification_chat_id": "",
+    "chat_id": [
+        "-1001806525506"
+    ],
+    "dag_tags": [
+        "polihoster",
+        "pepper",
+        "tiktok"
+    ],
+    "start_date": "2023-01-01 00:00:00",
+    "end_date": "2028-11-30 23:59:59",
+    "interval": 5,
+    "succession": "save2file",
+    "check_double_user": false,
+    "check_double_text": false,
+    "size": 200,
+    "search_after": "2025-05-19T09:24:28.239842Z",
+    "sort": {
+        "time": {
+            "order": "asc"
+        }
+    },
+    "dag_id": "polihoster_titok_pepper"
+}

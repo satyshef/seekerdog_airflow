@@ -1,0 +1,38 @@
+{
+    "enable": true,
+    "module": "es_collector.dogs.message_dog",
+    "description": "den crypto clone",
+    "index": "tgmsg*",
+    "filter_name": "vlasov_chanclone",
+    "filter_index": "filters2",
+    "bot_token": "token",
+    "chat_id": [
+        "-1001962378182"
+    ],
+    "send_notification": false,
+    "notification_chat_id": [
+        "-1001962378182"
+    ],
+    "post_template": "template_3",
+    "dag_tags": [
+        "tgmsg",
+        "vlasov",
+        "den",
+        "chanclone",
+        "crypto"
+    ],
+    "start_date": "2023-01-01 00:00:00",
+    "end_date": "2025-06-15 23:59:59",
+    "interval": 5,
+    "succession": "dubler",
+    "check_double_user": true,
+    "check_double_text": true,
+    "size": 10,
+    "search_after": "2025-05-19T12:51:18.139985Z",
+    "sort": {
+        "time": {
+            "order": "asc"
+        }
+    },
+    "dag_id": "vlasov_tgmsg_chanclone"
+}
